@@ -1,3 +1,4 @@
 test:
   override:
-    - py.test
+    - mkdir -p $CIRCLE_TEST_REPORTS/py.test
+    - py.test --junitxml=$CIRCLE_TEST_REPORTS/py.test acaversity
