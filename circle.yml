@@ -1,6 +1,7 @@
 dependencies:
   override:
     - pip install -r requirements.txt
+    - pip install wheel==0.24.0
     - pip install awscli==1.7.31
 
 test:
