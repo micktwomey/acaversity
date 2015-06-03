@@ -8,6 +8,6 @@ curl https://pypi.python.org/packages/source/v/virtualenv/virtualenv-$VIRTUALENV
 tar -zxf virtualenv-$VIRTUALENV_VERSION.tar.gz
 
 cd virtualenv-$VIRTUALENV_VERSION
-python virtualenv.py /venv
+python virtualenv.py $HOME/venv
 
-/venv/pip install --force-reinstall --ignore-installed --upgrade --no-index --no-deps /slug/wheels/*.whl
+$HOME/venv/pip install --force-reinstall --ignore-installed --upgrade --no-index --no-deps $HOME/slug/wheels/*.whl
