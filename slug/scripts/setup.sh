@@ -4,7 +4,7 @@ set -ex
 
 VIRTUALENV_VERSION=13.0.3
 
-curl https://pypi.python.org/packages/source/v/virtualenv/virtualenv-$VIRTUALENV_VERSION.tar.gz
+curl https://pypi.python.org/packages/source/v/virtualenv/virtualenv-$VIRTUALENV_VERSION.tar.gz > virtualenv-$VIRTUALENV_VERSION.tar.gz
 tar -zxf virtualenv-$VIRTUALENV_VERSION.tar.gz
 
 cd virtualenv-$VIRTUALENV_VERSION
