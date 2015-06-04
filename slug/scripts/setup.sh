@@ -10,6 +10,8 @@ tar -zxf virtualenv-$VIRTUALENV_VERSION.tar.gz
 cd virtualenv-$VIRTUALENV_VERSION
 python virtualenv.py $HOME/venv
 
+cd $HOME
+
 . $HOME/venv/bin/activate
 
 ./venv/bin/python ./venv/bin/pip install --force-reinstall --ignore-installed --upgrade --no-index --no-deps $HOME/slug/wheels/*.whl
