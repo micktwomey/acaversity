@@ -1,5 +1,5 @@
 APP_NAME=acaversity
-VERSION=$(shell git describe --tags --all --long --always | sed 's;^heads/;;g')
+VERSION=$(CIRCLE_BRANCH)-$(CIRCLE_BUILD_NUM)
 SLUG_TARBALL=$(APP_NAME)-$(VERSION).tar.gz
 
 $(SLUG_TARBALL):
