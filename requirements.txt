@@ -3,3 +3,4 @@ py==1.4.28
 pytest==2.7.1
 pytest-circleci==0.0.2
 pytest-django==2.8.0
+uWSGI==2.0.10
