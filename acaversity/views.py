@@ -5,7 +5,8 @@ from django.http import (
 
 
 def index(request):
-    html = "<html><body><h1>Hello</h1><p>What do you want to learn today?</p></body></html>"
+    version = 1
+    html = "<html><body><h1>Hello</h1><p>What do you want to learn today?</p><p>Version {}</p></body></html>".format(version)
     return HttpResponse(html)
 
 

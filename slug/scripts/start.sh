@@ -2,4 +2,5 @@
 
 . $HOME/venv/bin/activate
 
-exec ./venv/bin/python ./venv/bin/django-admin runserver --settings=acaversity.settings
+echo "Starting with args $@"
+exec ./venv/bin/python ./venv/bin/django-admin runserver --settings=acaversity.settings "$@"
