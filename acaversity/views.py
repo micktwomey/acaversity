@@ -1,5 +1,6 @@
 from django.http import (
     HttpResponse,
+    HttpResponseServerError,
     JsonResponse,
 )
 
@@ -11,4 +12,5 @@ def index(request):
 
 
 def healthcheck(request):
-    return JsonResponse({"ok": True})
+    # return JsonResponse({"ok": True})
+    return HttpResponseServerError('{"ok": false}')
