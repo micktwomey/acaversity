@@ -12,5 +12,5 @@ def index(request):
 
 
 def healthcheck(request):
-    # return JsonResponse({"ok": True})
-    return HttpResponseServerError('{"ok": false}')
+    return JsonResponse({"ok": True})
+    # return HttpResponseServerError('{"ok": false}')

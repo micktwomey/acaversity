@@ -8,5 +8,5 @@ def test_index(client):
 
 def test_healthcheck(client):
     response = client.get("/health")
-    assert response.status_code == 500
-    assert json.loads(response.content.decode('utf-8')) == {"ok": False}
+    assert response.status_code == 200
+    assert json.loads(response.content.decode('utf-8')) == {"ok": True}
