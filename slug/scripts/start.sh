@@ -2,4 +2,4 @@
 
 . $HOME/venv/bin/activate
 
-exec django-admin runserver --settings=acaversity.settings
+exec ./venv/bin/python ./venv/bin/django-admin runserver --settings=acaversity.settings

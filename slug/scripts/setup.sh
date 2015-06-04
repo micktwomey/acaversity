@@ -12,4 +12,4 @@ python virtualenv.py $HOME/venv
 
 . $HOME/venv/bin/activate
 
-pip install --force-reinstall --ignore-installed --upgrade --no-index --no-deps $HOME/slug/wheels/*.whl
+./venv/bin/python ./venv/bin/pip install --force-reinstall --ignore-installed --upgrade --no-index --no-deps $HOME/slug/wheels/*.whl
